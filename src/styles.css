@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Renogare;
+    src: url(./fonts/Renogare-Regular.otf);
+}
+
+body{
+    background: #e8c4ff;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #d594ff;
+    border-radius: 10px;
+    text-align: center;
+    width: 700px;
+    height: 500px;
+}
+
+.main-container h1{
+    font-family: Renogare;
+}
+
+.main-container img{
+    width: 40%;
+}
