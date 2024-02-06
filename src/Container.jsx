@@ -1,4 +1,6 @@
+
 export function Container (){
+
    const handleClick = () => {
     alert("Hello");
    }
@@ -8,8 +10,10 @@ export function Container (){
         <div className="main-container">
             <img src="src\images\photo.png"></img>
             <h1>Hello</h1>
-            <button onClick={handleClick}>Click me</button>
-
+            <div className="button-row">
+            <button className="accept-button" onClick={handleClick}>Yes</button>
+            <button className="decline-button" onClick={handleClick}>No</button>
+            </div>
         </div>
         </>
     )

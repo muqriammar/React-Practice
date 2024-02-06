@@ -27,8 +27,47 @@ body{
 
 .main-container h1{
     font-family: Renogare;
+    text-align: center;
 }
 
 .main-container img{
     width: 40%;
+}
+
+.accept-button{
+    background-color:#ac4fe8 ;
+    font-family: Renogare;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.accept-button:hover{
+    background-color: #8530bd;
+}
+
+.decline-button{
+    background-color:#b96cec ;
+    font-family: Renogare;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border:none;
+    border-radius:20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.decline-button:hover{
+    background-color: #ac4fe8;
+}
+
+.button-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
