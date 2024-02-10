@@ -60,6 +60,7 @@ body{
     border-radius:20px;
     cursor: pointer;
     transition: 0.5s;
+    visibility: visible;
 }
 
 .decline-button:hover{
