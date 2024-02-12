@@ -84,13 +84,12 @@ input#flap {
   position: relative;
   width: 320px;
   height: 200px;
-  background-color: #718355;
+  background-color: #bd30bb;
 }
 
 .envelope-back:before {
   content:"";
   position: absolute;
-  background-color: rgba(0,0,0,0.07);
   width: 320px;
   height:10px;
   border-radius:50%;
@@ -118,7 +117,7 @@ input#flap {
   position: absolute;
   width:0;
   height:0;
-  border-bottom: 100px solid #87986a;
+  border-bottom: 100px solid #f47ee4;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   top:100px;
@@ -137,14 +136,14 @@ input#flap {
 
 .card-front:before {
   border-left: 161px solid transparent;
-  border-right: 161px solid #97a97c;
+  border-right: 161px solid #ffa9ee;
   top:-100px;
   left:-162px;
 }
 
 .card-front:after {
   border-right: 161px solid transparent;
-  border-left: 161px solid #97a97c;
+  border-left: 161px solid #ffa9ee;
   top:-100px;
   left:-160px;
 }
@@ -153,7 +152,7 @@ input#flap {
   position: absolute;
   width:0;
   height:0;
-  border-top: 110px solid #b5c99a;
+  border-top: 110px solid #fdc4ff;
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   top:0;
@@ -201,4 +200,23 @@ input#flap {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.message{
+  background: #e8c4ff;
+  width: 750px;
+  height: 550px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.message p {
+  font-family: Renogare;
+  font-size: 15px;
+ 
+}
+
+.message-group{
+  background: #f0d9ff;
+  padding: 10px;
 }
