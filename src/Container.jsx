@@ -18,7 +18,7 @@ export function Container ({onButtonClick}){
     return (
         <>
         <div className="main-container">
-            <img src=".\React-Practice\images\photo.png"></img>
+            <img src="images\photo.png"></img>
             <h1>Will you be my Valentine?</h1>
             <div className="button-row">
             <motion.button whileHover={{scale: 1.1}} whileTap={{scale:0.9}} className="accept-button" onClick={onButtonClick}>Yes</motion.button>
