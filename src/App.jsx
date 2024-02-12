@@ -1,11 +1,31 @@
+import React, { useState } from "react";
+import { Container } from "./Container";
+import { Message } from "./Message";
+import { Modal } from "./Modal";
+import "./styles.css";
 
-import {Container} from "./Container"
-import './styles.css'
+export default function App() {
+  const [showSecondComponent, setShowSecondComponent] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-export default function App(){
+  const close = () => setShowModal(false);
+  const open = () => setShowModal(true);
+
+  const handleButtonClick = () => {
+    setShowSecondComponent(true);
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
   return (
-    <>
-    <Container></Container>
-    </>
-  )
+    <div>
+      {!showSecondComponent && <Container onButtonClick={handleButtonClick} />}
+      {showSecondComponent && !showModal && (
+        <Message openModal={openModal} />
+      )}
+      {showModal && <Modal closeModal={close} />}
+    </div>
+  );
 }

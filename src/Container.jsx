@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import {motion} from "framer-motion"
 
 
 
-export function Container (){
+export function Container ({onButtonClick}){
     const [buttonPressed, setButtonPressed] = useState(false)
 
     const handleButtonClick = () => {
@@ -10,7 +11,7 @@ export function Container (){
     }
 
    const handleClick = () => {
-    alert("Hello");
+    alert("Hello")
    }
 
    
@@ -20,9 +21,9 @@ export function Container (){
             <img src="src\images\photo.png"></img>
             <h1>Will you be my Valentine?</h1>
             <div className="button-row">
-            <button className="accept-button" onClick={handleClick}>Yes</button>
+            <motion.button whileHover={{scale: 1.1}} whileTap={{scale:0.9}} className="accept-button" onClick={onButtonClick}>Yes</motion.button>
             {!buttonPressed && (
-                <button className="decline-button" onClick={handleButtonClick}>No</button>
+                <motion.button whileHover={{scale: 1.1}} whileTap={{scale:0.9}} className="decline-button" onClick={handleButtonClick}>No</motion.button>
             )}
             
             </div>
